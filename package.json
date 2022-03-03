@@ -1,0 +1,14 @@
+{
+  "name": "test-course",
+  "version": "1.0.0",
+  "description": "Learn jest with vanillajs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

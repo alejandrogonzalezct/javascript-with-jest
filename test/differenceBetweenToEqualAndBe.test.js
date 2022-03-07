@@ -38,3 +38,30 @@ describe("numbers", () => {
     })
 })
 
+describe("strings", () => {
+    it("there is no I in team", () => {
+        expect("team").not.toMatch(/I/)
+    })
+})
+
+describe("arrays", () => {
+    
+    const shoppingLists = [
+        'diapers', 'kleenex', 'trash bags', 'paper towels', 'milk'
+    ]
+
+    it("contain word in array", () => {
+        expect(shoppingLists).toContain('milk')
+    })
+})
+
+function compileAndroidCode() {
+    throw new Error("You are using the wrong JDK")
+}
+
+describe('exceptions ', () => {
+    it("compiling android goes as expected", () => {
+        expect(()=> compileAndroidCode()).toThrow(Error)
+    })
+});
+ 

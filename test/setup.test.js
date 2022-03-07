@@ -1,4 +1,18 @@
-let animals = ['elephant', 'zebra', 'bear', 'tiger']
+let animals = []
+
+// beforeAll(() => {
+//     animals = ['elephant', 'zebra', 'bear', 'tiger']
+// })
+// afterEach(() => {
+//     animals = ['elephant', 'zebra', 'bear', 'tiger']
+// })
+// afterAll(()=> {
+//     animals = ['elephant', 'zebra', 'bear', 'tiger']
+// })
+
+beforeEach(() => {
+    animals = ['elephant', 'zebra', 'bear', 'tiger']
+})
 
 describe("animals array", () => {
     it("should add animal to end of array",()=> {
@@ -16,10 +30,17 @@ describe("animals array", () => {
     })
 
     /*
-        At the end of this test the last one will fail because 
-        the other test running before the last one and process the
-        array of animals and it added two elements before so the length 
-        of our array will not be 4 animals. So in the other commit we will solve this problem.
+        The tests passed because forEach hook run each test so 
+        it will set the array to animals variable to manipulate information
+        in each test
     */
+
+    
+})
+
+describe("testing something else", () => {
+    it.only("true should be truthy", () => {
+        expect(true).toBeTruthy()
+    })
 })
 

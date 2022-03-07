@@ -11,5 +11,15 @@ describe("animals array", () => {
         expect(animals[0]).toBe('monkey')
         console.log(animals)
     })
+    it("should have inital length of 4 animals", ()=> {
+        expect(animals.length).toBe(4)
+    })
+
+    /*
+        At the end of this test the last one will fail because 
+        the other test running before the last one and process the
+        array of animals and it added two elements before so the length 
+        of our array will not be 4 animals. So in the other commit we will solve this problem.
+    */
 })
 
